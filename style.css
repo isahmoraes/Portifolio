@@ -87,3 +87,16 @@ li{
     justify-content: space-between;
    
 }
+
+.texto_sobre{
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+}
+.sobre{
+    color: white;
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+   
+}
