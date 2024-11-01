@@ -24,13 +24,12 @@
     align-items: center;
     gap:32px;
 }
-img{
-    margin: 35px;
-}
+
 nav{
     
-    background-color:#BF3131;
+   
     padding: 1rem;
+ 
 }
 ul{
     box-sizing: border-box;
@@ -40,6 +39,7 @@ ul{
     padding-right: 1.5rem;
     justify-content: space-between;
     align-items: center;
+   
 }
 li{
     color: gainsboro;
