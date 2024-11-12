@@ -8,7 +8,7 @@
     <title>Sobre Mim</title>
 </head>
 <body class="fundo">
-    <nav class="bg-danger text-white p-3">
+    <nav class="menu p-3">
         <ul class="d-flex list-unstyled justify-content-between align-items-center m-0 px-4">
             <li><a href="./index.html" class="text-decoration-none text-white">Home</a></li>
             <li><a href="#contato" target="_blank" class="text-decoration-none text-white">Contato</a></li>
@@ -16,10 +16,31 @@
            
         </ul>
     </nav>
-    <main class="center my-5 pt-4 pb-4 margin-bottom-large">
-        <section class="  d-flex p-3   sobre">
+    <div class="button_theme">
+        <button onclick="toggleTheme()" class="theme-toggle-btn">
+            <span id="theme-icon" class="theme-icon">
+         
+                <svg id="sun-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sun">
+                    <circle cx="12" cy="12" r="5"></circle>
+                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                </svg>
+                 <svg id="moon-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon" style="display: none;">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </span>
+        </button>
+    </div>
+    <main class="center_about my-5 pt-4 pb-4 margin-bottom-large">
+        <section class="sobre">
                 
-            <p class="texto_sobre pb-4">
+            <p class="texto_sobre ">
 
              Meu nome é Isadora Moraes, estudante do curso de Analise e Desenvolvimento de Sistemas, 
              onde atuo experimentando diversas linguagens de programação, recentemente me descobri uma sonhadora, 
@@ -39,10 +60,10 @@
     <img  src="./assets/424510691_1089236385445573_5261090026277872746_n (1).jpg" alt="Foto da Programadora" width="400">
 </main>
 <section id="contato" class="my-5 px-4 pt-4">
-    <h2 class="text-center text-white pt-4 pb-4">Contato</h2>
+    <h2 class="text-center  pt-4 pb-4">Contato</h2>
     <div class="row">
         <div class="col-md-8 mx-auto">
-            <div class="card text-white bg-danger mb-4">
+            <div class="card  mb-4">
                 <div class="card-body">
                     <form  id="contatoForm" onsubmit="Form(event)">
                         <div class="mb-3">
@@ -61,6 +82,9 @@
                             <button type="submit" class="btn btn-secondary">Enviar</button>
                         </div>
                     </form>
+                    <div id="alertSuccess" class="alert alert-success mt-4" style="display: none;" role="alert">
+                        <strong>Sucesso!</strong> Seu e-mail foi enviado com sucesso. Em breve entraremos em contato.
+                    </div>
                 </div>
             </div>
         </div>
